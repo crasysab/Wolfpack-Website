@@ -23,3 +23,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:39px 0;background:#010
 .contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.contact-copy p{color:var(--muted)}.contact-options{display:grid;gap:12px;margin-top:28px}.contact-options div{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05)}.contact-options strong{display:block;font-size:.85rem}.contact-options span{display:block;color:var(--muted);font-size:.8rem;margin-top:3px}
 @media(max-width:1020px){.footer-grid{flex-wrap:wrap}.contact-layout{grid-template-columns:1fr}.footer-links{order:3;width:100%}}
 @media(max-width:680px){.legal-wrap{width:min(calc(100% - 28px),880px)}.footer-links{flex-wrap:wrap}.faq-grid details{padding:0 14px}}
+
+.brand-wordmark{display:flex;flex-direction:column;line-height:1;gap:3px}
+.brand-wordmark small{font-family:Inter,system-ui,sans-serif;font-size:.52rem;letter-spacing:.22em;color:#68cfff;font-weight:700}
