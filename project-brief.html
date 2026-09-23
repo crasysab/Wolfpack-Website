@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete your Wolfpack Game Lab project brief after checkout.">
+  <meta name="theme-color" content="#030814">
+  <title>Project Brief — Wolfpack Game Lab</title>
+  <link rel="canonical" href="https://wolfpackgamelab.com/project-brief.html">
+  <link rel="icon" type="image/webp" href="assets/wolfpack-wolf.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Wolfpack Game Lab home">
+        <span class="brand-icon"><img src="assets/wolfpack-wolf.webp" alt=""></span>
+        <span class="brand-wordmark">WOLFPACK<small>GAME LAB</small></span>
+      </a>
+      <a class="button button-ghost nav-cta" href="/">Back to site</a>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="legal-wrap">
+      <section class="legal-header">
+        <p class="overline">PROJECT BRIEF</p>
+        <h1>Tell us what you need to learn.</h1>
+        <p>If you have just completed checkout, Stripe will send your payment receipt separately. Use this brief to give Wolfpack the material and context needed to start your review.</p>
+        <div class="legal-callout"><strong>What happens next:</strong> we check the brief, confirm the scope and delivery window, then begin matching the project with relevant reviewers.</div>
+      </section>
+
+      <section class="form-panel">
+        <div class="form-title">
+          <span>DEVELOPER PROJECT</span>
+          <h3>Complete your brief</h3>
+          <p>Please use the same email address you used at checkout where possible.</p>
+        </div>
+
+        <form name="paid-project-brief" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="wolf-form">
+          <input type="hidden" name="form-name" value="paid-project-brief">
+          <input type="hidden" name="subject" value="New paid Wolfpack project brief">
+          <p class="hidden"><label>Do not fill this out <input name="bot-field"></label></p>
+
+          <div class="field-row">
+            <label>
+              <span>Name</span>
+              <input required type="text" name="name" placeholder="Your name">
+            </label>
+            <label>
+              <span>Email used at checkout</span>
+              <input required type="email" name="email" placeholder="you@studio.com">
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              <span>Game / studio</span>
+              <input required type="text" name="game" placeholder="Game or studio name">
+            </label>
+            <label>
+              <span>Package</span>
+              <select required name="package" id="package">
+                <option value="">Select package</option>
+                <option value="Capsule Check">Capsule Check</option>
+                <option value="Trailer Review">Trailer Review</option>
+                <option value="Steam Page Review">Steam Page Review</option>
+                <option value="Demo First Look">Demo First Look</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            <span>Material link</span>
+            <input required type="url" name="link" placeholder="Steam page, trailer, build page or shared assets">
+          </label>
+
+          <label>
+            <span>What is the main question you want answered?</span>
+            <textarea required name="primary-question" rows="5" placeholder="For example: Does the store page explain the core loop quickly enough to make the right players wishlist?"></textarea>
+          </label>
+
+          <label>
+            <span>Anything we should know before reviewers see it?</span>
+            <textarea name="context" rows="4" placeholder="Target audience, known concerns, launch timing, content warnings, access instructions..."></textarea>
+          </label>
+
+          <label class="consent">
+            <input required type="checkbox" name="confirmation" value="yes">
+            <span>I confirm that I am authorised to share this material for review and have read the <a class="inline-link" href="privacy.html">Privacy Notice</a> and <a class="inline-link" href="terms.html">Website Terms</a>.</span>
+          </label>
+
+          <button class="button button-primary full-width" type="submit">Send project brief</button>
+          <div class="form-message" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <p class="legal-meta">Need help? Email <a class="inline-link" href="mailto:hello@wolfpackgamelab.com">hello@wolfpackgamelab.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-icon"><img src="assets/wolfpack-wolf.webp" alt=""></span>
+        <div><strong>WOLFPACK</strong><span>GAME LAB · Player feedback before launch.</span></div>
+      </div>
+      <nav class="footer-links" aria-label="Legal and contact">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-note"><span>Founding stage</span><span>© <span id="year"></span> Wolfpack Game Lab</span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const packageMap={capsule:"Capsule Check",trailer:"Trailer Review",steam:"Steam Page Review",demo:"Demo First Look"};
+    const requested=new URLSearchParams(location.search).get("package");
+    if(requested&&packageMap[requested]){
+      const select=document.getElementById("package");
+      if(select) select.value=packageMap[requested];
+    }
+  </script>
+</body>
+</html>
