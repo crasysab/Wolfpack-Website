@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wolfpack gives indie game developers structured, private feedback from real gamers before launch.">
+  <meta name="theme-color" content="#020815">
+  <title>Wolfpack — Player feedback before launch</title>
+
+  <link rel="icon" type="image/webp" href="assets/wolfpack-wolf.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Wolfpack home">
+        <span class="brand-icon">
+          <img src="assets/wolfpack-wolf.webp" alt="">
+        </span>
+        <span>WOLFPACK</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#service">What we review</a>
+        <a href="#process">How it works</a>
+        <a href="#developers">For developers</a>
+        <a href="#reviewers">For gamers</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+
+      <a class="button button-primary nav-cta" href="#developer-form">Request a review</a>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <a href="#service">What we review</a>
+      <a href="#process">How it works</a>
+      <a href="#developers">For developers</a>
+      <a href="#reviewers">For gamers</a>
+      <a href="#pricing">Pricing</a>
+      <a class="button button-primary" href="#developer-form">Request a review</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Wolfpack early access</div>
+
+          <h1>See your game through a player's eyes <em>before launch.</em></h1>
+
+          <p class="hero-text">
+            Wolfpack gives indie developers structured, private feedback on Steam pages,
+            trailers, screenshots and demos — from gamers matched to the games they actually play.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary button-large" href="#developer-form">Request a review</a>
+            <a class="button button-ghost button-large" href="#reviewer-form">Join the reviewer pool</a>
+          </div>
+
+          <div class="principles">
+            <div>
+              <strong>Private</strong>
+              <span>Feedback is for your team, not public scoring.</span>
+            </div>
+            <div>
+              <strong>Relevant</strong>
+              <span>Reviewers are matched by genre and player profile.</span>
+            </div>
+            <div>
+              <strong>Structured</strong>
+              <span>Comparable answers, not a wall of random comments.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wolf-stage" aria-label="Wolfpack wolf logo">
+          <div class="wolf-glow"></div>
+          <img class="hero-wolf" src="assets/wolfpack-wolf.webp" alt="Wolfpack blue wolf">
+          <div class="wolf-caption">
+            <span class="caption-kicker">WOLFPACK</span>
+            <span>Real players. Useful feedback.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiet-strip">
+      <div class="container strip-grid">
+        <span>STEAM PAGE</span>
+        <span>TRAILER</span>
+        <span>CAPSULE ART</span>
+        <span>SCREENSHOTS</span>
+        <span>DEMO</span>
+        <span>FIRST IMPRESSION</span>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <div class="container section-intro">
+        <div>
+          <p class="overline">WHAT WE REVIEW</p>
+          <h2>Your marketing should be tested before the market tests it for you.</h2>
+        </div>
+        <p class="section-copy">
+          Developers know their own game too well to experience the store page like a new player.
+          Wolfpack creates a controlled first impression and turns it into feedback you can act on.
+        </p>
+      </div>
+
+      <div class="container service-grid">
+        <article class="service-card">
+          <span class="service-no">01</span>
+          <h3>Store page</h3>
+          <p>Does the page communicate the genre, hook and value quickly enough to earn another click?</p>
+          <ul>
+            <li>Click intent</li>
+            <li>Genre clarity</li>
+            <li>Wishlist intent</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <span class="service-no">02</span>
+          <h3>Trailer</h3>
+          <p>Where does attention rise or fall, and how quickly does the trailer show what playing feels like?</p>
+          <ul>
+            <li>Opening impact</li>
+            <li>Gameplay clarity</li>
+            <li>Drop-off points</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <span class="service-no">03</span>
+          <h3>Visual assets</h3>
+          <p>Test capsule art and screenshots for readability, positioning and the expectations they create.</p>
+          <ul>
+            <li>Capsule appeal</li>
+            <li>Visual hierarchy</li>
+            <li>Player expectation</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <span class="service-no">04</span>
+          <h3>Demo first look</h3>
+          <p>Put the opening experience in front of relevant players and identify friction while it can still be fixed.</p>
+          <ul>
+            <li>Onboarding</li>
+            <li>Confusion points</li>
+            <li>Play-again intent</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section section-tinted">
+      <div class="container compact-heading">
+        <p class="overline">HOW IT WORKS</p>
+        <h2>A simple process. A clearer outside view.</h2>
+      </div>
+
+      <div class="container process">
+        <article>
+          <span>01</span>
+          <h3>Submit the content</h3>
+          <p>Send the page, trailer, images or demo you want reviewed and tell us what you need to learn.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>We match the reviewers</h3>
+          <p>We select gamers whose genre preferences and player profile are relevant to the project.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>They review independently</h3>
+          <p>Each reviewer follows the same structured brief, giving us responses we can compare properly.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>You receive the report</h3>
+          <p>We group the patterns, points of friction and written comments into one practical summary.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="developers" class="section">
+      <div class="container report-layout">
+        <div class="report-copy">
+          <p class="overline">FOR DEVELOPERS</p>
+          <h2>Useful feedback, without turning your launch into a public experiment.</h2>
+          <p>
+            Wolfpack is designed for small studios and independent developers preparing a Steam page,
+            festival entry, demo, Kickstarter or release campaign.
+          </p>
+
+          <div class="tick-list">
+            <div><span>✓</span> Identify what new players understand immediately</div>
+            <div><span>✓</span> Find the strongest and weakest parts of your presentation</div>
+            <div><span>✓</span> Separate repeated signals from one-off opinions</div>
+            <div><span>✓</span> Make changes before traffic, wishlists or launch momentum are at stake</div>
+          </div>
+
+          <a class="button button-primary" href="#developer-form">Request early access</a>
+        </div>
+
+        <div class="example-report">
+          <div class="report-label">EXAMPLE REPORT</div>
+          <div class="report-title-row">
+            <div>
+              <span>Steam page review</span>
+              <h3>Project Nightfall</h3>
+            </div>
+            <span class="status">12 responses</span>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <span>Understood the game</span>
+              <strong>75%</strong>
+              <i><b style="width:75%"></b></i>
+            </div>
+            <div class="metric">
+              <span>Would keep exploring</span>
+              <strong>83%</strong>
+              <i><b style="width:83%"></b></i>
+            </div>
+            <div class="metric">
+              <span>Would wishlist</span>
+              <strong>58%</strong>
+              <i><b style="width:58%"></b></i>
+            </div>
+          </div>
+
+          <div class="finding positive">
+            <div><span>STRONG SIGNAL</span><strong>8 / 12 reviewers</strong></div>
+            <p>The combat and art direction created the clearest positive first impression.</p>
+          </div>
+
+          <div class="finding caution">
+            <div><span>MAIN FRICTION</span><strong>6 / 12 reviewers</strong></div>
+            <p>The trailer takes too long to show uninterrupted gameplay.</p>
+          </div>
+
+          <p class="sample-note">Illustrative example — not results from a live Wolfpack project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviewers" class="section reviewer-section">
+      <div class="container reviewer-layout">
+        <div class="reviewer-wolf">
+          <img src="assets/wolfpack-wolf.webp" alt="">
+        </div>
+
+        <div class="reviewer-copy">
+          <p class="overline">FOR GAMERS</p>
+          <h2>Good games get better when the right players are heard early.</h2>
+          <p>
+            Join the reviewer pool and tell us what you genuinely play. When a suitable project comes in,
+            Wolfpack can invite you to give structured feedback before the wider market sees it.
+          </p>
+
+          <div class="reviewer-points">
+            <div><strong>01</strong><span>Choose the genres you know</span></div>
+            <div><strong>02</strong><span>Review projects matched to your profile</span></div>
+            <div><strong>03</strong><span>Build a reviewer history as Wolfpack grows</span></div>
+          </div>
+
+          <a class="button button-ghost" href="#reviewer-form">Join the Wolfpack</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section section-tinted">
+      <div class="container pricing-heading">
+        <div>
+          <p class="overline">EARLY ACCESS PRICING</p>
+          <h2>Start with the question you need answered.</h2>
+        </div>
+        <p>
+          These packages are deliberately simple while Wolfpack validates what developers value most.
+          No payment is taken through this website yet.
+        </p>
+      </div>
+
+      <div class="container pricing-grid">
+        <article class="price-card">
+          <span class="price-type">VISUAL FIRST IMPRESSION</span>
+          <h3>Capsule Check</h3>
+          <div class="price">£29</div>
+          <p>Quick reactions to the artwork that has to earn the click.</p>
+          <ul>
+            <li>20 first-impression responses</li>
+            <li>Click intent</li>
+            <li>Genre expectation</li>
+            <li>Written comments</li>
+          </ul>
+          <a href="#developer-form" class="button button-ghost">Request this review</a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="featured-tag">RECOMMENDED START</span>
+          <span class="price-type">STORE PAGE</span>
+          <h3>Steam Page Review</h3>
+          <div class="price">£49</div>
+          <p>A broader first-impression review of the page that has to earn the wishlist.</p>
+          <ul>
+            <li>12 matched gamers</li>
+            <li>Capsule, screenshots and trailer</li>
+            <li>Clarity and wishlist intent</li>
+            <li>Structured insight summary</li>
+          </ul>
+          <a href="#developer-form" class="button button-primary">Request this review</a>
+        </article>
+
+        <article class="price-card">
+          <span class="price-type">HANDS-ON</span>
+          <h3>Demo First Look</h3>
+          <div class="price">£99</div>
+          <p>Structured reactions from players after spending time with the opening experience.</p>
+          <ul>
+            <li>5 matched gamers</li>
+            <li>20–30 minute sessions</li>
+            <li>Onboarding and friction points</li>
+            <li>Play-again intent</li>
+          </ul>
+          <a href="#developer-form" class="button button-ghost">Request this review</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section forms-section">
+      <div class="container forms-heading">
+        <p class="overline">EARLY ACCESS</p>
+        <h2>Two sides of the Wolfpack.</h2>
+        <p>For the MVP, submissions are handled manually so we can learn before automating the wrong things.</p>
+      </div>
+
+      <div class="container forms-grid">
+        <article id="developer-form" class="form-panel">
+          <div class="form-title">
+            <span>DEVELOPERS</span>
+            <h3>Request a review</h3>
+            <p>Tell us what you are working on and what you need to learn.</p>
+          </div>
+
+          <form name="developer-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="wolf-form">
+            <input type="hidden" name="form-name" value="developer-request">
+            <input type="hidden" name="subject" value="New Wolfpack developer request">
+            <p class="hidden"><label>Do not fill this out <input name="bot-field"></label></p>
+
+            <div class="field-row">
+              <label>
+                <span>Name</span>
+                <input required type="text" name="name" placeholder="Your name">
+              </label>
+              <label>
+                <span>Email</span>
+                <input required type="email" name="email" placeholder="you@studio.com">
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Game / studio</span>
+                <input required type="text" name="game" placeholder="Game or studio name">
+              </label>
+              <label>
+                <span>Genre</span>
+                <input type="text" name="genre" placeholder="RPG, horror, strategy...">
+              </label>
+            </div>
+
+            <label>
+              <span>Link</span>
+              <input required type="url" name="link" placeholder="Steam page, trailer, demo page...">
+            </label>
+
+            <label>
+              <span>What would you like reviewed?</span>
+              <select name="review-type">
+                <option>Steam page</option>
+                <option>Trailer</option>
+                <option>Capsule art</option>
+                <option>Screenshots</option>
+                <option>Demo</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label>
+              <span>What do you most want to learn?</span>
+              <textarea name="question" rows="5" placeholder="For example: Does the trailer explain the core loop quickly enough?"></textarea>
+            </label>
+
+            <p class="form-small">Submitting this form does not commit you to a purchase.</p>
+            <button class="button button-primary full-width" type="submit">Send review request</button>
+            <div class="form-message" aria-live="polite"></div>
+          </form>
+        </article>
+
+        <article id="reviewer-form" class="form-panel">
+          <div class="form-title">
+            <span>GAMERS</span>
+            <h3>Join the reviewer pool</h3>
+            <p>Help us build a reviewer base around the games people genuinely know.</p>
+          </div>
+
+          <form name="reviewer-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="wolf-form">
+            <input type="hidden" name="form-name" value="reviewer-application">
+            <input type="hidden" name="subject" value="New Wolfpack reviewer application">
+            <p class="hidden"><label>Do not fill this out <input name="bot-field"></label></p>
+
+            <div class="field-row">
+              <label>
+                <span>Name / gamer tag</span>
+                <input required type="text" name="name" placeholder="Your name or tag">
+              </label>
+              <label>
+                <span>Email</span>
+                <input required type="email" name="email" placeholder="you@example.com">
+              </label>
+            </div>
+
+            <label>
+              <span>Main genres</span>
+              <input required type="text" name="genres" placeholder="FPS, RPG, survival, strategy...">
+            </label>
+
+            <div class="field-row">
+              <label>
+                <span>Main platform</span>
+                <select name="platform">
+                  <option>PC</option>
+                  <option>Steam Deck / handheld PC</option>
+                  <option>PlayStation</option>
+                  <option>Xbox</option>
+                  <option>Switch</option>
+                  <option>Multiple</option>
+                </select>
+              </label>
+              <label>
+                <span>Gaming per week</span>
+                <select name="hours">
+                  <option>1–5 hours</option>
+                  <option>6–10 hours</option>
+                  <option>11–20 hours</option>
+                  <option>21–30 hours</option>
+                  <option>30+ hours</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Anything relevant we should know?</span>
+              <textarea name="notes" rows="5" placeholder="Favourite games, platforms, review experience, accessibility perspective..."></textarea>
+            </label>
+
+            <label class="consent">
+              <input required type="checkbox" name="contact-consent" value="yes">
+              <span>I agree to be contacted about Wolfpack reviewer opportunities.</span>
+            </label>
+
+            <button class="button button-primary full-width" type="submit">Join the reviewer pool</button>
+            <div class="form-message" aria-live="polite"></div>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container cta-box">
+        <img src="assets/wolfpack-wolf.webp" alt="">
+        <div>
+          <p class="overline">WOLFPACK</p>
+          <h2>Find the weak first impression while you can still change it.</h2>
+        </div>
+        <a class="button button-primary button-large" href="#developer-form">Request a review</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-icon"><img src="assets/wolfpack-wolf.webp" alt=""></span>
+        <div>
+          <strong>WOLFPACK</strong>
+          <span>Player feedback before launch.</span>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        <span>Early access MVP</span>
+        <span>© <span id="year"></span> Wolfpack</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
