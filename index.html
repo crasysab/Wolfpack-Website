@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Wolfpack gives indie game developers structured, private feedback from real gamers before launch.">
   <meta name="theme-color" content="#020815">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wolfpack — Player feedback before launch">
+  <meta property="og:description" content="Private, structured feedback from gamers matched to the games they actually play.">
   <title>Wolfpack — Player feedback before launch</title>
 
   <link rel="icon" type="image/webp" href="assets/wolfpack-wolf.webp">
@@ -285,12 +288,12 @@
     <section id="pricing" class="section section-tinted">
       <div class="container pricing-heading">
         <div>
-          <p class="overline">EARLY ACCESS PRICING</p>
+          <p class="overline">FOUNDING PRICING</p>
           <h2>Start with the question you need answered.</h2>
         </div>
         <p>
-          These packages are deliberately simple while Wolfpack validates what developers value most.
-          No payment is taken through this website yet.
+          Founding packages are deliberately simple while Wolfpack learns what developers value most.
+          No payment is taken through this website; every request is reviewed before anything is agreed.
         </p>
       </div>
 
@@ -337,6 +340,37 @@
           </ul>
           <a href="#developer-form" class="button button-ghost">Request this review</a>
         </article>
+      </div>
+    </section>
+
+
+    <section id="faq" class="section">
+      <div class="container compact-heading">
+        <p class="overline">QUESTIONS</p>
+        <h2>Clear expectations from the start.</h2>
+      </div>
+
+      <div class="container faq-grid">
+        <details open>
+          <summary>Is Wolfpack a public review site?</summary>
+          <p>No. Wolfpack is a private feedback service for developers. We do not publish a public score or review unless a developer separately agrees to that.</p>
+        </details>
+        <details>
+          <summary>How are gamers selected?</summary>
+          <p>For the early service, reviewers are matched manually using the genres, platforms and playing habits they tell us about when they join the pool.</p>
+        </details>
+        <details>
+          <summary>Can I submit unreleased material?</summary>
+          <p>Yes, but only send content you are comfortable sharing with selected reviewers. Reviewers agree not to redistribute private test material, but a separate NDA can be arranged where a project requires one.</p>
+        </details>
+        <details>
+          <summary>How quickly will I receive feedback?</summary>
+          <p>During early access we confirm timing individually before accepting a review. We would rather give a realistic delivery date than promise an automated turnaround we cannot yet guarantee.</p>
+        </details>
+        <details>
+          <summary>Are reviewers paid?</summary>
+          <p>Wolfpack is still validating the reviewer model. Some early opportunities may be community-based; paid tests and reviewer rewards will be clearly stated before a reviewer accepts an assignment.</p>
+        </details>
       </div>
     </section>
 
@@ -404,7 +438,7 @@
               <textarea name="question" rows="5" placeholder="For example: Does the trailer explain the core loop quickly enough?"></textarea>
             </label>
 
-            <p class="form-small">Submitting this form does not commit you to a purchase.</p>
+            <p class="form-small">Submitting this form does not commit you to a purchase. By submitting, you acknowledge our <a class="inline-link" href="privacy.html">Privacy Notice</a> and <a class="inline-link" href="terms.html">Website Terms</a>.</p>
             <button class="button button-primary full-width" type="submit">Send review request</button>
             <div class="form-message" aria-live="polite"></div>
           </form>
@@ -468,8 +502,13 @@
             </label>
 
             <label class="consent">
+              <input required type="checkbox" name="age-confirmation" value="18-or-over">
+              <span>I confirm that I am 18 or over.</span>
+            </label>
+
+            <label class="consent">
               <input required type="checkbox" name="contact-consent" value="yes">
-              <span>I agree to be contacted about Wolfpack reviewer opportunities.</span>
+              <span>I agree to be contacted about Wolfpack reviewer opportunities and have read the <a class="inline-link" href="privacy.html">Privacy Notice</a> and <a class="inline-link" href="terms.html">Website Terms</a>.</span>
             </label>
 
             <button class="button button-primary full-width" type="submit">Join the reviewer pool</button>
@@ -500,6 +539,12 @@
           <span>Player feedback before launch.</span>
         </div>
       </div>
+
+      <nav class="footer-links" aria-label="Legal and contact">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
       <div class="footer-note">
         <span>Early access MVP</span>
