@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Wolfpack about developer reviews, reviewer applications, privacy or general questions.">
+  <meta name="theme-color" content="#020815">
+  <title>Contact — Wolfpack</title>
+  <link rel="icon" type="image/webp" href="assets/wolfpack-wolf.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Wolfpack home">
+        <span class="brand-icon"><img src="assets/wolfpack-wolf.webp" alt=""></span>
+        <span>WOLFPACK</span>
+      </a>
+      <a class="button button-ghost nav-cta" href="index.html">Back to Wolfpack</a>
+    </div>
+  </header>
+  <main class="legal-main">
+    <div class="legal-wrap">
+      <a class="legal-back" href="index.html">← Back to Wolfpack</a>
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p class="overline">CONTACT</p>
+          <h1>Talk to Wolfpack.</h1>
+          <p>Use this form for general questions, privacy requests, partnership enquiries or anything that does not fit the developer and reviewer forms on the homepage.</p>
+          <div class="contact-options">
+            <div><strong>Developer review</strong><span>Use the developer request form on the homepage for the fastest route.</span></div>
+            <div><strong>Reviewer application</strong><span>Join the reviewer pool from the homepage.</span></div>
+            <div><strong>Privacy request</strong><span>Select “Privacy / data request” here and tell us what you need.</span></div>
+          </div>
+        </div>
+
+        <article class="form-panel">
+          <div class="form-title">
+            <span>GENERAL CONTACT</span>
+            <h3>Send a message</h3>
+            <p>We will use the details below only to handle your message unless you separately opt in to something else.</p>
+          </div>
+          <form name="general-contact" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" class="wolf-form">
+            <input type="hidden" name="form-name" value="general-contact">
+            <input type="hidden" name="subject" value="New Wolfpack contact message">
+            <p class="hidden"><label>Do not fill this out <input name="bot-field"></label></p>
+            <label><span>Name</span><input required type="text" name="name" placeholder="Your name"></label>
+            <label><span>Email</span><input required type="email" name="email" placeholder="you@example.com"></label>
+            <label>
+              <span>Reason</span>
+              <select name="reason">
+                <option>General question</option>
+                <option>Developer enquiry</option>
+                <option>Reviewer enquiry</option>
+                <option>Partnership</option>
+                <option>Privacy / data request</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label><span>Message</span><textarea required name="message" rows="7" placeholder="How can we help?"></textarea></label>
+            <p class="form-small">By submitting, you acknowledge our <a class="inline-link" href="privacy.html">Privacy Notice</a>.</p>
+            <button class="button button-primary full-width" type="submit">Send message</button>
+          </form>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-icon"><img src="assets/wolfpack-wolf.webp" alt=""></span>
+        <div><strong>WOLFPACK</strong><span>Player feedback before launch.</span></div>
+      </div>
+      <nav class="footer-links" aria-label="Legal and contact">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-note"><span>Early access MVP</span><span>© 2026 Wolfpack</span></div>
+    </div>
+  </footer>
+</body>
+</html>
